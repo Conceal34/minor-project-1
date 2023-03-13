@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+strong { 
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
 .header {
     position: relative;
     background-image: linear-gradient(to right bottom,
@@ -198,7 +204,7 @@ button {
         letter-spacing: 20px;
     }
     .heading-primary{
-        font-size: 50px;
+        font-size: 40px;
     }
     .heading-secondary{
         font-size: 20px;
@@ -206,8 +212,8 @@ button {
     }
 }
 
-strong { 
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.3rem;
+@media only screen and (max-width:400px) {
+    .heading-primary{
+        font-size: 35px;
+    }
 }
