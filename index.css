@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    background-image: linear-gradient(to right bottom,
+            #ff661fce,
+            #ffffffdf,
+            #046a39d4),
+        url(images/Gwalior-fort-Gwalior.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-links a {
+    display: block;
+    text-decoration: none;
+    color: #a2a2a2;
+    margin-bottom: 8px;
+}
+
+.menu-links a:hover,
+.menu-links a:focus {
+    color: #777;
+}
+
+.text-area {
+    text-transform: uppercase;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading {
+    letter-spacing: 35px;
+}
+
+.heading-primary {
+    display: block;
+    font-size: 60px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-secondary {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 25px;
+    font-weight: 700;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translatex(10px);
+    }
+
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+button {
+    all: unset;
+    padding: 4px 15px;
+    border-radius: 100px;
+}
+
+.button-grey {
+    margin-top: 45px;
+    color: #fff;
+    background-color: #777;
+    transition: all 0.2s;
+    animation: moveUp 1s;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.button:hover,
+.button:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #fff;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px #fff;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    row-gap: 25px;
+}
+
+.card {
+    width: 18rem;
+}
+
+@media only screen and (max-width:1200px) {
+    .main {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media only screen and (max-width:900px) {
+    .main {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:650px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin: auto;
+        width: 90%;
+    }
+    
+    .header {
+        height: 75vh;
+        margin-bottom: 25px;
+    }
+    .heading {
+        letter-spacing: 20px;
+    }
+    .heading-primary{
+        font-size: 50px;
+    }
+    .heading-secondary{
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+}
+
+strong { 
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
