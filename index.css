@@ -34,15 +34,20 @@ strong {
         url(images/Gwalior-fort-Gwalior.jpg);
     background-position: center;
     background-size: cover;
-    height: 95vh;
+    height: 86vh;
     border-radius: 12px 12px 0 0;
     margin-bottom: 50px;
 }
 
-.menu-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.menu-btn-back {
+    position: fixed;
+    top: 45px;
+    right: 50px;
+    width: 45px;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 10;
 }
 
 .menu-links a {
@@ -169,6 +174,7 @@ button {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     row-gap: 25px;
+    margin-bottom: 15vh;
 }
 
 .card {
@@ -227,13 +233,15 @@ button {
 }
 
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-family: 'Dancing Script', cursive;
     color: #fff;
-    margin-top: 50px;
     border-radius: 0 0 12px 12px;
     background-color: #777;
-    height: 70vh;
+    height: 10vh;
     text-transform: uppercase;
 }
 
@@ -242,5 +250,4 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
 }
