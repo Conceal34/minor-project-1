@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-strong { 
+strong {
     display: block;
     margin-bottom: 10px;
     font-size: 1.3rem;
@@ -164,7 +166,7 @@ button {
 .main {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     row-gap: 25px;
 }
@@ -175,45 +177,70 @@ button {
 
 @media only screen and (max-width:1200px) {
     .main {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media only screen and (max-width:900px) {
     .main {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
         width: 90%;
     }
 }
+
 @media only screen and (max-width:650px) {
     .main {
         grid-template-columns: 1fr;
     }
+
     .card {
         margin: auto;
         width: 90%;
     }
-    
+
     .header {
         height: 75vh;
         margin-bottom: 25px;
     }
+
     .heading {
         letter-spacing: 20px;
     }
-    .heading-primary{
+
+    .heading-primary {
         font-size: 40px;
     }
-    .heading-secondary{
+
+    .heading-secondary {
         font-size: 20px;
         letter-spacing: 10px;
     }
 }
 
 @media only screen and (max-width:400px) {
-    .heading-primary{
-        font-size: 25px;
+    .heading-primary {
+        font-size: 35px;
     }
+}
+
+.footer {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 0 0 12px 12px;
+    background-color: #777;
+    height: 70vh;
+    text-transform: uppercase;
+}
+
+.made-by {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
 }
