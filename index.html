@@ -21,15 +21,17 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
+        <!-- fixed header btn -->
         <div class="menu menu-btn">
-
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                aria-controls="offcanvasWithBothOptions">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
+            <div class="menu-btn-back">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                    aria-controls="offcanvasWithBothOptions">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button>
+            </div>
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -100,12 +102,13 @@
 
     <main class="main" id="main">
         <!-- 1 -->
-        <div class="card">
+        <div class="card" id="red-fort">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Red-Fort-Delhi.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Red Fort</strong>A UNESCO World Heritage Site, is an outstanding combination of size and aesthetics.
+                    <strong> Red Fort</strong>A UNESCO World Heritage Site, is an outstanding combination of size and
+                    aesthetics.
                     Construction took over a period of ten years, from 1638 to 1648. When the Mughal emperor, Shah
                     Jahan, came to Delhi shifting his capital from Agra to Delhi. The octagonal fort, built in red
                     sandstone, stands proudly
@@ -114,12 +117,13 @@
             </div>
         </div>
         <!-- 2 -->
-        <div class="card">
+        <div class="card" id="khajuraho">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Khajuraho-Temples.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Khajuraho Temples</strong>located in the town of Khajuraho in Madhya Pradesh, is a UNESCO World Heritage
+                    <strong> Khajuraho Temples</strong>located in the town of Khajuraho in Madhya Pradesh, is a UNESCO
+                    World Heritage
                     Site. The temples display a very powerful
                     emotion residing within human beings, that of eroticism and sensuality. Built by the Chandel rulers,
                     this group of Hindu and Jain temples consist of exquisitely carved statues and sculptures that
@@ -128,11 +132,12 @@
             </div>
         </div>
         <!-- 3 -->
-        <div class="card">
+        <div class="card" id="taj-mahal">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/taj-mahal.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Taj Mahal</strong></strong>, a UNESCO World Heritage Site, is one of the most famous historical places in Agra city of
+                    <strong> Taj Mahal</strong></strong>, a UNESCO World Heritage Site, is one of the most famous
+                    historical places in Agra city of
                     Uttar Pardesh and should be visited at least once in a lifetime. It represents the pinnacle of grand
                     Mughal architecture and is built entirely of white marble. Shah Jahan built this magnificent
                     monument for one of his favorite wife, Mumtaz Mahal. It took around 22 yrs to complete
@@ -141,11 +146,12 @@
             </div>
         </div>
         <!-- 4 -->
-        <div class="card">
+        <div class="card" id="hampi">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/hampi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> The ruins of Hampi</strong>, a UNESCO World Heritage Site, stand as a reminder of the glory that prevailed
+                    <strong> The ruins of Hampi</strong>, a UNESCO World Heritage Site, stand as a reminder of the glory
+                    that prevailed
                     during the Vijaynagara Empire. A visit to Hampi brings you across some of the best examples of
                     aesthetics and style in architecture. An example of that is the Virupaksha Temple, which consists of
                     a Lord Shiva statue carved in stone. The other attractions are the Queen’s Bath, Elephant Stables,
@@ -154,12 +160,13 @@
             </div>
         </div>
         <!-- 5 -->
-        <div class="card">
+        <div class="card" id="qutub-minar">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Qutub-Minar.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Qutub Minar</strong> is one of the must visit historical places in Delhi and a UNESCO World Heritage Site.
+                    <strong> Qutub Minar</strong> is one of the must visit historical places in Delhi and a UNESCO World
+                    Heritage Site.
                     Built by Qutb-ud-din Aibak, it is testimony to the first Muslim kingdom in India. Touching the skies
                     at a height of almost 240ft, it is one of the tallest ancient towers all over the world. One of the
                     finest example of Indo-Muslim architecture, it consists of red sandstone stories which are adorned
@@ -168,12 +175,13 @@
             </div>
         </div>
         <!-- 6 -->
-        <div class="card">
+        <div class="card" id="fatehpur-sikri">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Fatehpur-Sikri-1.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Fatehpur Sikri</strong>, situated at a distance of almost 40km to the west of Agra, was the short-lived
+                    <strong> Fatehpur Sikri</strong>, situated at a distance of almost 40km to the west of Agra, was the
+                    short-lived
                     capital of the Mughal emperor Akbar. It served as a short lived capital of the Mughal Empire in the
                     16th century. However, it had to be abandoned because of problems with the water supply, among other
                     things. Taking a tour of this royal city brings you across courtyards, audience halls and pavilions
@@ -182,7 +190,7 @@
             </div>
         </div>
         <!-- 7 -->
-        <div class="card">
+        <div class="card" id="hawa-mahal">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Hawa-Mahal.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">
@@ -196,12 +204,13 @@
             </div>
         </div>
         <!-- 8 -->
-        <div class="card">
+        <div class="card" id="konark-sun-temple">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Konark-Sun-Temple.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Konark Sun Temple in Odisha</strong>, a UNESCO World Heritage Site, is an ode to the artistic brilliance
+                    <strong> Konark Sun Temple in Odisha</strong>, a UNESCO World Heritage Site, is an ode to the
+                    artistic brilliance
                     achieved under the reign of King Narasimhadeva I, the glorious ruler of Ganga dynasty. Located on
                     the coast of Bay of Bengal, One particular attraction
                     is the entrance to the temple which shows two lions crushing elephants and a human body lying at the
@@ -210,12 +219,13 @@
             </div>
         </div>
         <!-- 9 -->
-        <div class="card">
+        <div class="card" id="gateway-of-india">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Gateway-of-India.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Gateway of India</strong> is one of the famous historical places in Mumbai. Dating back to 1924, it was as an
+                    <strong> Gateway of India</strong> is one of the famous historical places in Mumbai. Dating back to
+                    1924, it was as an
                     access point for entry and exit during the British period. The monument commemorates the visit of
                     King George V and Queen Mary to the city in 1911. However, the structure wasn’t complete until 1924.
                     It also played a significant role in the history of India, since it was here that the British troops
@@ -224,12 +234,13 @@
             </div>
         </div>
         <!-- 10 -->
-        <div class="card">
+        <div class="card" id="mahabodhi-temple">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Mahabodhi-Temple.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> Mahabodhi Temple</strong> is where Gautam Buddha is believed to have attained enlightenment while meditating
+                    <strong> Mahabodhi Temple</strong> is where Gautam Buddha is believed to have attained enlightenment
+                    while meditating
                     under a fig tree. The Bodhi tree is the descendant of the Fig tree and lies in close proximity to
                     the temple. The earliest temple, however, dates back to Asoka’s rule in the 3rd century BC. It
                     houses an enormous Buddha statue touching the earth with his right hand.
@@ -237,12 +248,13 @@
             </div>
         </div>
         <!-- 11 -->
-        <div class="card">
+        <div class="card" id="victoria-memorial">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Victoria-Memorial.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> The Victoria Memorial</strong> is indisputably one of the best examples of British architecture in West
+                    <strong> The Victoria Memorial</strong> is indisputably one of the best examples of British
+                    architecture in West
                     Bengal . The idea for the monument goes to Lord Curzon, the then Viceroy. While its actual designing
                     and implantation was by Sir William Emerson. Inside the premises of Victoria Memorial stands a
                     beautiful garden along with a museum containing British memorabilia like sculptures, paintings,
@@ -251,14 +263,16 @@
             </div>
         </div>
         <!-- 12 -->
-        <div class="card">
+        <div class="card" id="ajanta-and-ellora-caves">
             <img src="https://ihplb.b-cdn.net/wp-content/uploads/2018/06/Ajanta-Ellora-Caves.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">
-                    <strong> The Ajanta & Ellora Caves in Aurangabad</strong> are a UNESCO World Heritage Sites and an example of
+                    <strong> The Ajanta & Ellora Caves in Aurangabad</strong> are a UNESCO World Heritage Sites and an
+                    example of
                     outstanding craftsmanship. They are also one of the most fascinating historical places in India.
-                    It’s amazing to think that each rock carving was done by hand. There are 29 caves belonging to Hinduism, Jainism and
+                    It’s amazing to think that each rock carving was done by hand. There are 29 caves belonging to
+                    Hinduism, Jainism and
                     Buddhism. There are 34 caves at Ellora, out of which 12 are Buddhist, 17 are Hindu and 5 are Jain.
                 </p>
             </div>
@@ -266,7 +280,7 @@
     </main>
 
     <footer class="footer" id="footer">
-
+        <span class="made-by">designed and developed by: vinner</span>
     </footer>
 
     <!-- bootstrap-script -->
