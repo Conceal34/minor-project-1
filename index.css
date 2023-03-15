@@ -125,33 +125,6 @@ strong {
     }
 }
 
-button {
-    all: unset;
-    padding: 4px 15px;
-    border-radius: 100px;
-}
-
-.button-grey {
-    margin-top: 45px;
-    color: #fff;
-    background-color: #777;
-    transition: all 0.2s;
-    animation: moveUp 1s;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-}
-
-.button:hover,
-.button:focus {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px #fff;
-}
-
-.button:active {
-    transform: translateY(2px);
-    box-shadow: 0 5px 10px #fff;
-}
-
 @keyframes moveUp {
     0% {
         transform: translateY(30px);
